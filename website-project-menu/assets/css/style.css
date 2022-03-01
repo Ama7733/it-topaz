@@ -1,0 +1,199 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  background-color: #992108;
+  }
+  
+  header.primary{
+    background-color:#992108;
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px #000000;
+    /* Longform */
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:10px;
+    padding-left:40px;
+  /* shorthand different values top/right/bottom/left 
+    padding: 40px 40px 60px 40px;
+    */
+  }
+  
+  header.primary h1{
+    color:rgb(116, 1, 1);
+    font-size: 3.5em;
+    margin: 20px 0;
+  }
+  
+  header.primary h1 a{
+    text-decoration:none;
+    color:#ffffff;
+  }
+  
+  header.primary h2{
+    color:rgb(116, 1, 1);
+    font-size:3em;
+    /* Top / Left & Right / Bottom */
+    margin: 20px auto 40px;
+  }
+  
+  header.primary nav{
+    margin: 20px auto;
+  }
+  
+  header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding:0;
+  }
+  
+  header.primary ul li{
+  list-style-type:none;
+  padding:10px;
+  }
+  header.primary nav a:link, header.primary nav a:visited{
+    color:white;
+    text-decoration:none;
+    background:#000000;
+    background: rgba(0,0,0,.4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition:.5s;
+  }
+  
+  header.primary nav a:hover{
+    background: rgba(0,0,0,.8)
+  }
+  .gallery {
+    background-color: #CCC;
+    width: 330px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #999;
+    height: 200px;
+    overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+    border-radius: 4px;
+  }
+  .gallery img {
+    margin: 15px;
+    display:flex;
+    justify-content:center;
+    padding:0;
+  }
+  p{
+    color:rgb(61, 21, 238);
+  margin:40px;
+  font-size:2em;
+   
+  }
+
+.tabs {
+
+    font-family: "lucida grande", sans-serif;
+  }
+  
+  [role="tablist"] {
+    margin: 0 0 -0.1em;
+    overflow: visible;
+  }
+  
+  [role="tab"] {
+    position: relative;
+    margin: 0;
+    padding: 0.3em 0.5em 0.4em;
+    border: 1px solid hsl(219deg 1% 72%);
+    border-radius: 0.2em 0.2em 0 0;
+    box-shadow: 0 0 0.2em hsl(219deg 1% 72%);
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    background: hsl(220deg 20% 94%);
+  }
+  
+  [role="tab"]:hover::before,
+  [role="tab"]:focus::before,
+  [role="tab"][aria-selected="true"]::before {
+    position: absolute;
+    bottom: 100%;
+    right: -1px;
+    left: -1px;
+    border-radius: 0.2em 0.2em 0 0;
+    border-top: 3px solid hsl(20deg 96% 48%);
+    content: "";
+  }
+  
+  [role="tab"][aria-selected="true"] {
+    border-radius: 0;
+    background: hsl(220deg 43% 99%);
+    outline: 0;
+  }
+  
+  [role="tab"][aria-selected="true"]:not(:focus):not(:hover)::before {
+    border-top: 5px solid hsl(218deg 96% 48%);
+  }
+  
+  [role="tab"][aria-selected="true"]::after {
+    position: absolute;
+    z-index: 3;
+    bottom: -1px;
+    right: 0;
+    left: 0;
+    height: 0.3em;
+    background: hsl(220deg 43% 99%);
+    box-shadow: none;
+    content: "";
+  }
+  
+  [role="tab"]:hover,
+  [role="tab"]:focus,
+  [role="tab"]:active {
+    outline: 0;
+    border-radius: 0;
+    color: inherit;
+  }
+  
+  [role="tab"]:hover::before,
+  [role="tab"]:focus::before {
+    border-color: hsl(20deg 96% 48%);
+  }
+  
+  [role="tabpanel"] {
+    position: relative;
+    z-index: 2;
+    padding: 0.5em 0.5em 0.7em;
+    border: 1px solid hsl(219deg 1% 72%);
+    border-radius: 0 0.2em 0.2em;
+    box-shadow: 0 0 0.2em hsl(219deg 1% 72%);
+    background: hsl(220deg 43% 99%);
+  }
+  
+  [role="tabpanel"].is-hidden {
+    display: none;
+  }
+  
+  [role="tabpanel"]:focus {
+    border-color: hsl(20deg 96% 48%);
+    box-shadow: 0 0 0.2em hsl(20deg 96% 48%);
+    outline: 0;
+  }
+  
+  [role="tabpanel"]:focus::after {
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    left: -1px;
+    border-bottom: 3px solid hsl(20deg 96% 48%);
+    border-radius: 0 0 0.2em 0.2em;
+    content: "";
+  }
+  
+  [role="tabpanel"] p {
+    margin: 0;
+  }
+  
+  [role="tabpanel"] * + p {
+    margin-top: 1em;
+  }
+  
