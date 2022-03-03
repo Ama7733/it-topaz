@@ -2,12 +2,13 @@ body{
   font-family: 'Roboto', sans-serif;
   margin:0;
   background-color: #992108;
+  background-image: url("../img/background-chinese.jpg");
+  background-size: cover;
   }
   
   header.primary{
-    background-color:#992108;
     text-align:center;
-    color:white;
+    color:#F2C80C;
     text-shadow:2px 2px #000000;
     /* Longform */
     padding-top:40px;
@@ -20,9 +21,9 @@ body{
   }
   
   header.primary h1{
-    color:rgb(116, 1, 1);
+    color:#F2C80C;
     font-size: 3.5em;
-    margin: 20px 0;
+    margin: 40px 0;
   }
   
   header.primary h1 a{
@@ -65,28 +66,15 @@ body{
   header.primary nav a:hover{
     background: rgba(0,0,0,.8)
   }
-  .gallery {
-    background-color: #CCC;
-    width: 330px;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid #999;
-    height: 200px;
-    overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
-    border-radius: 4px;
+  
+  #content h2 {
+    text-align: center;
+    color:#F2C80C;
   }
-  .gallery img {
-    margin: 15px;
-    display:flex;
-    justify-content:center;
-    padding:0;
-  }
-  p{
-    color:rgb(61, 21, 238);
-  margin:40px;
-  font-size:2em;
-   
+
+  p {
+    text-align: center;
+    color: #F2C80C;
   }
 
 .tabs {
