@@ -1,5 +1,3 @@
-<!-- Alternate Configuation Options Here - https://accessible360.github.io/accessible-slick/#demos -->
-
 $(document).ready(function() {
 
     $('.fade').slick({
