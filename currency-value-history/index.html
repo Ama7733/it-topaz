@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Polygon - Currency Value History">
+    <meta name="keywords" content="HTML, CSS,JavaScript, AJAX, jQuery">
+    <meta name="author" content="Alexander Ma">
+    <title>Polygon - Company Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="myform">
+        <div class="formcontainer">
+            <h2>Currency Value History</h2>
+                <label class="formlabel" for="baseCurrency">Base Currency:</label>
+                <select id="baseCurrency" value="baseCurrency" name="baseCurrency" data-rule-required="true" data-msg-required="Base Currency is Required">
+                    <option value="">Please select a currency...</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="JPY">Japanese Yen</option>
+                </select>
+
+                <br>
+
+                <label class="formlabel" for="convertTo">Convert To Currency:</label>
+                <select id="convertTo" value="convertTo" name="convertTo" data-rule-required="true" data-msg-required="Convert To Currency is Required">
+                    <option value="">Please select a currency...</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="MXN">Mexican Peso</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="JPY">Japanese Yen</option>
+                </select>
+
+            <label class="error" for="convertTo" id="CurrencyError"></label>
+            <br>
+            <label class="formlabel">From Date:</label>
+            <input type="date" name="FromDate" id="FromDate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            
+            <br>
+
+            <label class="formlabel">To Date:</label>
+            <input type="date" name="ToDate" id="ToDate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+            <input type="button" value="Show Results" id="showResults" name="showResults" onclick="GetCurrency();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <hr>
+            <br>
+            
+            <div class="clearfix">
+                <div class="img-container">
+                    <h2 id="title"></h2>
+                    <canvas id="chartjs-0" width="500" height="500"></canvas>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/currency-value-history.js"></script>
+</body>
+</html>
