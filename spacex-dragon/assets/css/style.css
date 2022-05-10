@@ -35,7 +35,10 @@ html {
   /* ---------------Global Styles----------------- */
   
   body {
+  background-image: url(../img/istockphoto-1138395421-612x612.jpg);
+  background-size: cover;
   font-family: 'Roboto', sans-serif;
+  color: white;
   margin:0;
   line-height:1.4;
   }
@@ -43,6 +46,7 @@ html {
   header.primary{
     background-image:url(../img/NET-ZERO-SPACE-INITIATIVE-1.png);
     background-size: cover;
+    background-position: 70%;
     text-align:center;
     color:#ffffff;
     text-shadow: 2px 2px #000000;
@@ -58,9 +62,7 @@ html {
     /* Top/Bottom  Right/Left */
     padding: 20px 40px;
   }
-  header.primary img{
-      opacity: ;
-  }
+
   header.primary h1{
     font-size:2.8rem;
     margin:20px 0;
@@ -120,6 +122,7 @@ html {
   
   #content.container{
     display:flex;
+    gap: 15px;
     flex-direction:row;
     justify-content:space-between;
   }
@@ -204,7 +207,20 @@ html {
     text-shadow:2px 2px #000;
   }
   
-  
+  .rocket {
+max-width: 250px;
+width: 100%;
+float:left;
+padding-right: 10px;
+  }
+
+
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-0lax{text-align:left;vertical-align:top}
   
   @media screen and (max-width:710px){
     
